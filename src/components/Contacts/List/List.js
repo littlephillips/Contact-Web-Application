@@ -5,7 +5,7 @@ const List = () => {
   const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
-    fetch('https://my-contact-api-project.herokuapp.com/contacts')
+    fetch('https://my-contact-api.herokuapp.com/contacts')
       .then((res) => res.json())
       .then((data) => setContacts(data));
   }, []);

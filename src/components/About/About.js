@@ -10,7 +10,7 @@ function About() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. 
           Phasellus sit amet ex ipsum. Praesenolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat.
               Phasellus sit amet ex ipsum. Praesent pharetra tincidunt te sit amet  sit amet ex ipsum. Praesent pharetra tincidunt
-            tempor. Etiam velit eros, dapibus eget porta in, lacinia et mag
+               tempor. Etiam velit eros, dapibus eget porta in, lacinia et mag
               ex ipsum. Praesent 
               pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magmpor. Etiam velit eros, dapibus eget porta in, lacinia et magna
               sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magt pharetra tincidunt tempor. Etiam velit eros, dapibus eget 

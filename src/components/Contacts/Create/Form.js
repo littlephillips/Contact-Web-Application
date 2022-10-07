@@ -17,8 +17,6 @@ const Form = () => {
     firstName: '',
   });
 
-  //handleChange
-
   function onInputChange(event) {
     event.preventDefault();
     event.stopPropagation();
@@ -36,7 +34,7 @@ const Form = () => {
 let handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    let res = await fetch('https://my-contact-api-project.herokuapp.com/contacts', {
+    let res = await fetch('https://my-contact-api.herokuapp.com/contacts', {
       method: 'POST',
       headers: {
           'Content-type': 'application/json'
