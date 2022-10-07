@@ -29,7 +29,7 @@ Routing is incorporated and no new pages are opened
 <br/>  
 
 
-## Rapidfire  
+## Personal information
 <table><tr><td valign="top" width="50%">
 
 - 🔭 I’m currently working on Contact App  
