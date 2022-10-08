@@ -18,8 +18,9 @@ const List = () => {
           <th>ID</th>
           <th>First Name</th>
           <th>Last Name</th>
-          <th>Email</th>
           <th>Phone</th>
+          <th>Email</th>
+          
         </tr>
       </thead>
       <tbody>
