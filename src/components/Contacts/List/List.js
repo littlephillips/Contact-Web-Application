@@ -10,7 +10,15 @@ const List = () => {
       .then((data) => setContacts(data));
   }, []);
 
-  window.console.dir(contacts);
+  // window.console.dir(contacts);
+
+
+  function deleteContact(id){
+    const updatedContacts = contacts.filter(contact => contact.id !== id)
+    setContacts(updatedContacts)
+  }
+
+
   return (
     <table>
       <thead>
@@ -20,6 +28,7 @@ const List = () => {
           <th>Last Name</th>
           <th>Phone</th>
           <th>Email</th>
+          <th>Action</th>
           
         </tr>
       </thead>
@@ -32,6 +41,9 @@ const List = () => {
               <td>{contact.lastName}</td>
               <td>{contact.phone}</td>
               <td>{contact.email}</td>
+              <td> 
+                  <button className='deleteContacts' onClick={() => deleteContact(contact.id)}>Delete</button>
+              </td>
             </tr>
           ))}
       </tbody>
