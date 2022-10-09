@@ -157,8 +157,19 @@ td {
   margin-top: 30px;
   border-radius: 10px;
   border: 1px solid #ccc;
-  background:rgb(41, 41, 236);
+  background:rgb(10, 32, 230);
   color: #fff;
   font-size: 20px;
 }
 
+
+.deleteContacts{
+  border: none;
+  border-radius: 10px;
+  background: #000;
+  padding: px;
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
+
+}
