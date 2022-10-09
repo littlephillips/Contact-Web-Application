@@ -10,6 +10,7 @@ import {
 } from './Form.styled';
 
 const Form = () => {
+  const [ispending, setIsPending] = useState(false);
   const [state, setState] = useState({
     phone: '',
     email: '',
@@ -33,6 +34,8 @@ const Form = () => {
 
 let handleSubmit = async (e) => {
   e.preventDefault();
+  e.currentTarget.reset();
+  setIsPending(true)
   try {
     let res = await fetch('https://my-contact-api.herokuapp.com/contacts', {
       method: 'POST',
@@ -48,6 +51,7 @@ let handleSubmit = async (e) => {
     }),
     });
     let resJson = await res.json();
+    setIsPending(false)
     if(resJson.status === 200) {
       setState((state) => [resJson, ...state]);
     } else {
@@ -57,7 +61,6 @@ let handleSubmit = async (e) => {
     console.log(err)
   }
 };
-
 
 
 
@@ -128,7 +131,8 @@ let handleSubmit = async (e) => {
             />
           </div>
         </StyledWrapper>
-        <StyledButton type='submit'>Submit</StyledButton>
+        {!ispending && <StyledButton type='submit'>Submit</StyledButton>}
+        {ispending && <StyledButton disabled type='submit'>adding...</StyledButton>}
 
         <Link to={'/list'}>
         <button className='styledbutton' >View Contacts</button>
