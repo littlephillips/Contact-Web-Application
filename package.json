@@ -1,5 +1,4 @@
 {
-  "homepage": "http://littlephillips.github.io/Contact-Web-Application",
   "name": "contacts",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +14,7 @@
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "http://littlephillips.github.io/Contact-Web-Application",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
